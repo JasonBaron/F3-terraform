@@ -1,0 +1,23 @@
+# Ignore retry files
+*.retry
+
+# Ignore repositories
+repo/*
+
+# Editor Files
+*.sublime-workspace
+.*.sw?
+*/*.bak
+
+# Mac ignore
+.DS_Store
+
+#Ansible ignore
+ansible.cfg
+
+# Editor Files
+*.sublime-workspace
+.*.sw?
+
+# Ignore _private to assure private info stays private
+_private/*
