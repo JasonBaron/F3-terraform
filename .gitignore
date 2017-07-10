@@ -21,3 +21,6 @@ ansible.cfg
 
 # Ignore _private to assure private info stays private
 _private/*
+
+#Ignore Terraform Config files
+*.tfstate

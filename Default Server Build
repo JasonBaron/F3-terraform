@@ -1,0 +1,20 @@
+/* CentOS 7 (x86_64) - with Updates HVM
+# https://aws.amazon.com/marketplace/pp/B00O7WM7QW
+# Version 1704 released 05/15/2017
+# US East (N. Virginia)   ami-46c1b650
+
+variable "ami" {
+  description = "ami-46c1b650"
+}
+
+/* A multi
+   line comment. */
+resource "aws_instance" "web" {
+  ami               = "${var.ami}"
+  count             = 2
+  source_dest_check = false
+
+  connection {
+    user = "centos"
+  }
+}
